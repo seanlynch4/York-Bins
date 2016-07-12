@@ -1,0 +1,405 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14793B0F1D35240E00E111FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14793B0E1D35240E00E111FD /* AppDelegate.swift */; };
+		14793B111D35240E00E111FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14793B101D35240E00E111FD /* ViewController.swift */; };
+		14793B141D35240E00E111FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14793B121D35240E00E111FD /* Main.storyboard */; };
+		14793B161D35240E00E111FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14793B151D35240E00E111FD /* Assets.xcassets */; };
+		14793B191D35240E00E111FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14793B171D35240E00E111FD /* LaunchScreen.storyboard */; };
+		14793B241D35240F00E111FD /* York_Bin_CollectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14793B231D35240F00E111FD /* York_Bin_CollectionTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		14793B201D35240F00E111FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14793B031D35240E00E111FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14793B0A1D35240E00E111FD;
+			remoteInfo = "York Bin Collection";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		14793B0B1D35240E00E111FD /* York Bin Collection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "York Bin Collection.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		14793B0E1D35240E00E111FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		14793B101D35240E00E111FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		14793B131D35240E00E111FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		14793B151D35240E00E111FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		14793B181D35240E00E111FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		14793B1A1D35240E00E111FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14793B1F1D35240F00E111FD /* York Bin CollectionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "York Bin CollectionTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		14793B231D35240F00E111FD /* York_Bin_CollectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = York_Bin_CollectionTests.swift; sourceTree = "<group>"; };
+		14793B251D35240F00E111FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		14793B081D35240E00E111FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14793B1C1D35240F00E111FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14793B021D35240E00E111FD = {
+			isa = PBXGroup;
+			children = (
+				14793B0D1D35240E00E111FD /* York Bin Collection */,
+				14793B221D35240F00E111FD /* York Bin CollectionTests */,
+				14793B0C1D35240E00E111FD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		14793B0C1D35240E00E111FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				14793B0B1D35240E00E111FD /* York Bin Collection.app */,
+				14793B1F1D35240F00E111FD /* York Bin CollectionTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		14793B0D1D35240E00E111FD /* York Bin Collection */ = {
+			isa = PBXGroup;
+			children = (
+				14793B0E1D35240E00E111FD /* AppDelegate.swift */,
+				14793B101D35240E00E111FD /* ViewController.swift */,
+				14793B121D35240E00E111FD /* Main.storyboard */,
+				14793B151D35240E00E111FD /* Assets.xcassets */,
+				14793B171D35240E00E111FD /* LaunchScreen.storyboard */,
+				14793B1A1D35240E00E111FD /* Info.plist */,
+			);
+			path = "York Bin Collection";
+			sourceTree = "<group>";
+		};
+		14793B221D35240F00E111FD /* York Bin CollectionTests */ = {
+			isa = PBXGroup;
+			children = (
+				14793B231D35240F00E111FD /* York_Bin_CollectionTests.swift */,
+				14793B251D35240F00E111FD /* Info.plist */,
+			);
+			path = "York Bin CollectionTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		14793B0A1D35240E00E111FD /* York Bin Collection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14793B281D35240F00E111FD /* Build configuration list for PBXNativeTarget "York Bin Collection" */;
+			buildPhases = (
+				14793B071D35240E00E111FD /* Sources */,
+				14793B081D35240E00E111FD /* Frameworks */,
+				14793B091D35240E00E111FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "York Bin Collection";
+			productName = "York Bin Collection";
+			productReference = 14793B0B1D35240E00E111FD /* York Bin Collection.app */;
+			productType = "com.apple.product-type.application";
+		};
+		14793B1E1D35240F00E111FD /* York Bin CollectionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14793B2B1D35240F00E111FD /* Build configuration list for PBXNativeTarget "York Bin CollectionTests" */;
+			buildPhases = (
+				14793B1B1D35240F00E111FD /* Sources */,
+				14793B1C1D35240F00E111FD /* Frameworks */,
+				14793B1D1D35240F00E111FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14793B211D35240F00E111FD /* PBXTargetDependency */,
+			);
+			name = "York Bin CollectionTests";
+			productName = "York Bin CollectionTests";
+			productReference = 14793B1F1D35240F00E111FD /* York Bin CollectionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		14793B031D35240E00E111FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Sean;
+				TargetAttributes = {
+					14793B0A1D35240E00E111FD = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 964C546RH5;
+					};
+					14793B1E1D35240F00E111FD = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 964C546RH5;
+						TestTargetID = 14793B0A1D35240E00E111FD;
+					};
+				};
+			};
+			buildConfigurationList = 14793B061D35240E00E111FD /* Build configuration list for PBXProject "York Bin Collection" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 14793B021D35240E00E111FD;
+			productRefGroup = 14793B0C1D35240E00E111FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				14793B0A1D35240E00E111FD /* York Bin Collection */,
+				14793B1E1D35240F00E111FD /* York Bin CollectionTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		14793B091D35240E00E111FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14793B191D35240E00E111FD /* LaunchScreen.storyboard in Resources */,
+				14793B161D35240E00E111FD /* Assets.xcassets in Resources */,
+				14793B141D35240E00E111FD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14793B1D1D35240F00E111FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		14793B071D35240E00E111FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14793B111D35240E00E111FD /* ViewController.swift in Sources */,
+				14793B0F1D35240E00E111FD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14793B1B1D35240F00E111FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14793B241D35240F00E111FD /* York_Bin_CollectionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		14793B211D35240F00E111FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14793B0A1D35240E00E111FD /* York Bin Collection */;
+			targetProxy = 14793B201D35240F00E111FD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		14793B121D35240E00E111FD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14793B131D35240E00E111FD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		14793B171D35240E00E111FD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14793B181D35240E00E111FD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		14793B261D35240F00E111FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		14793B271D35240F00E111FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		14793B291D35240F00E111FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "York Bin Collection/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Sean.York-Bin-Collection";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		14793B2A1D35240F00E111FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "York Bin Collection/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Sean.York-Bin-Collection";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		14793B2C1D35240F00E111FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "York Bin CollectionTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Sean.York-Bin-CollectionTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/York Bin Collection.app/York Bin Collection";
+			};
+			name = Debug;
+		};
+		14793B2D1D35240F00E111FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "York Bin CollectionTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Sean.York-Bin-CollectionTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/York Bin Collection.app/York Bin Collection";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		14793B061D35240E00E111FD /* Build configuration list for PBXProject "York Bin Collection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14793B261D35240F00E111FD /* Debug */,
+				14793B271D35240F00E111FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14793B281D35240F00E111FD /* Build configuration list for PBXNativeTarget "York Bin Collection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14793B291D35240F00E111FD /* Debug */,
+				14793B2A1D35240F00E111FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		14793B2B1D35240F00E111FD /* Build configuration list for PBXNativeTarget "York Bin CollectionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14793B2C1D35240F00E111FD /* Debug */,
+				14793B2D1D35240F00E111FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 14793B031D35240E00E111FD /* Project object */;
+}
