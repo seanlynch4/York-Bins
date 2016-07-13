@@ -13,6 +13,7 @@
 		14793B161D35240E00E111FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14793B151D35240E00E111FD /* Assets.xcassets */; };
 		14793B191D35240E00E111FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14793B171D35240E00E111FD /* LaunchScreen.storyboard */; };
 		14793B241D35240F00E111FD /* York_Bin_CollectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14793B231D35240F00E111FD /* York_Bin_CollectionTests.swift */; };
+		61EC3A6EF409B118573F7BE0 /* Pods_York_Bin_Collection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF57EDB83C7401B24879FEFA /* Pods_York_Bin_Collection.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,10 @@
 		14793B1F1D35240F00E111FD /* York Bin CollectionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "York Bin CollectionTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		14793B231D35240F00E111FD /* York_Bin_CollectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = York_Bin_CollectionTests.swift; sourceTree = "<group>"; };
 		14793B251D35240F00E111FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4283D9398030443AB03F12A2 /* Pods-York Bin Collection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-York Bin Collection.debug.xcconfig"; path = "Pods/Target Support Files/Pods-York Bin Collection/Pods-York Bin Collection.debug.xcconfig"; sourceTree = "<group>"; };
+		8BE0D3812E67AB00D174F375 /* Pods-York Bin Collection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-York Bin Collection.release.xcconfig"; path = "Pods/Target Support Files/Pods-York Bin Collection/Pods-York Bin Collection.release.xcconfig"; sourceTree = "<group>"; };
+		CF57EDB83C7401B24879FEFA /* Pods_York_Bin_Collection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_York_Bin_Collection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE589F9257C400B46901B951 /* Pods_York_Bin_CollectionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_York_Bin_CollectionTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61EC3A6EF409B118573F7BE0 /* Pods_York_Bin_Collection.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +68,8 @@
 				14793B0D1D35240E00E111FD /* York Bin Collection */,
 				14793B221D35240F00E111FD /* York Bin CollectionTests */,
 				14793B0C1D35240E00E111FD /* Products */,
+				F5E35475D8A1ACE5B6E79621 /* Pods */,
+				3713EBAB0752A7EEBBE1204C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +104,24 @@
 			path = "York Bin CollectionTests";
 			sourceTree = "<group>";
 		};
+		3713EBAB0752A7EEBBE1204C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF57EDB83C7401B24879FEFA /* Pods_York_Bin_Collection.framework */,
+				EE589F9257C400B46901B951 /* Pods_York_Bin_CollectionTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F5E35475D8A1ACE5B6E79621 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4283D9398030443AB03F12A2 /* Pods-York Bin Collection.debug.xcconfig */,
+				8BE0D3812E67AB00D174F375 /* Pods-York Bin Collection.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +129,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 14793B281D35240F00E111FD /* Build configuration list for PBXNativeTarget "York Bin Collection" */;
 			buildPhases = (
+				D552F878706B102FBAB4CEAF /* [CP] Check Pods Manifest.lock */,
 				14793B071D35240E00E111FD /* Sources */,
 				14793B081D35240E00E111FD /* Frameworks */,
 				14793B091D35240E00E111FD /* Resources */,
+				6C48E18BA13E21755E9E61A9 /* [CP] Embed Pods Frameworks */,
+				A3D3A8995232EC1E78527689 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +149,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 14793B2B1D35240F00E111FD /* Build configuration list for PBXNativeTarget "York Bin CollectionTests" */;
 			buildPhases = (
+				7ADA5A369BEBDBD38CF8DEE5 /* [CP] Check Pods Manifest.lock */,
 				14793B1B1D35240F00E111FD /* Sources */,
 				14793B1C1D35240F00E111FD /* Frameworks */,
 				14793B1D1D35240F00E111FD /* Resources */,
+				0E89F9B35CD4C057ED23037F /* [CP] Embed Pods Frameworks */,
+				2B084030DA049090AC41E07D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +225,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E89F9B35CD4C057ED23037F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-York Bin CollectionTests/Pods-York Bin CollectionTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2B084030DA049090AC41E07D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-York Bin CollectionTests/Pods-York Bin CollectionTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C48E18BA13E21755E9E61A9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-York Bin Collection/Pods-York Bin Collection-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7ADA5A369BEBDBD38CF8DEE5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A3D3A8995232EC1E78527689 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-York Bin Collection/Pods-York Bin Collection-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D552F878706B102FBAB4CEAF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		14793B071D35240E00E111FD /* Sources */ = {
@@ -327,6 +452,7 @@
 		};
 		14793B291D35240F00E111FD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4283D9398030443AB03F12A2 /* Pods-York Bin Collection.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "York Bin Collection/Info.plist";
@@ -338,6 +464,7 @@
 		};
 		14793B2A1D35240F00E111FD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BE0D3812E67AB00D174F375 /* Pods-York Bin Collection.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "York Bin Collection/Info.plist";
@@ -390,6 +517,7 @@
 				14793B2A1D35240F00E111FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		14793B2B1D35240F00E111FD /* Build configuration list for PBXNativeTarget "York Bin CollectionTests" */ = {
 			isa = XCConfigurationList;
@@ -398,6 +526,7 @@
 				14793B2D1D35240F00E111FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
