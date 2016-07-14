@@ -15,6 +15,10 @@ import JSONJoy
 class ViewController2: UIViewController {
 
     @IBOutlet var label: UILabel!
+    @IBOutlet var tableView: UITableView!
+    var selectedIndex = -1
+    var dataArray : [[String:String]] = [["FirstName":"Sean", "LastName" : "Lynch"], ["FirstName":"test", "LastName" : "test2"]]
+    
     var collections = [Waste]()
     
     override func viewDidLoad()
@@ -22,16 +26,69 @@ class ViewController2: UIViewController {
         super.viewDidLoad()
         
         let retrive = NSUserDefaults.standardUserDefaults()
-        if let address = retrive.stringForKey("shortAddress") {
+        if let address = retrive.stringForKey("shortAddress")
+        {
             label.text = address
         }
         if let uprn = retrive.stringForKey("uprn")
         {
            getData(uprn)
         }
-        
-
     }
+    
+    
+    
+    
+    
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
+        return dataArray.count;
+    }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        if(selectedIndex == indexPath.row)
+        {
+            return 100;
+        }
+        else{
+            return 40;
+        }
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
+    {
+        let cellIdentifier = "Cell"
+        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier) as! customCell
+        
+        let obj = dataArray[indexPath.row]
+        cell.firstViewLabel.text = obj["FirstName"]
+        cell.secondViewLabel.text = obj["LastName"]
+        return cell;
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
+    {
+        if (selectedIndex == indexPath.row)
+        {
+            selectedIndex = -1
+        }
+        else
+        {
+            selectedIndex = indexPath.row
+        }
+        self.tableView.beginUpdates()
+        self.tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Automatic)
+        self.tableView.endUpdates()
+    
+    }
+    
+    
+    
+    
+    
+    
+    
+    
 
     func getData(uprn: String)
     {
@@ -70,10 +127,19 @@ class ViewController2: UIViewController {
     
     func sortCollectionData()
     {
-        
+        for record in collections
+        {
+                if record.CollectionAvailable == "Y"
+                {
+                    
+            
+                    
+                }
+        }
+            
     }
-    
-    
+
+
     //error message function can be called pass a title and a string
     func errorMessage(title: String, message: String)
     {
