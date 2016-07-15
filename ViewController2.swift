@@ -17,8 +17,7 @@ class ViewController2: UIViewController {
     @IBOutlet var label: UILabel!
     @IBOutlet var tableView: UITableView!
     var selectedIndex = -1
-    var dataArray : [[String:String]] = [["FirstName":"Sean", "LastName" : "Lynch"], ["FirstName":"test", "LastName" : "test2"]]
-    
+    var dataArray : [[String:String]] = []
     var collections = [Waste]()
     
     override func viewDidLoad()
@@ -61,8 +60,8 @@ class ViewController2: UIViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier) as! customCell
         
         let obj = dataArray[indexPath.row]
-        cell.firstViewLabel.text = obj["FirstName"]
-        cell.secondViewLabel.text = obj["LastName"]
+        cell.firstViewLabel.text = obj["MainLabel"]
+        cell.secondViewLabel.text = obj["NextCollection"]
         return cell;
     }
     
@@ -132,11 +131,31 @@ class ViewController2: UIViewController {
                 if record.CollectionAvailable == "Y"
                 {
                     
-            
+                    if let MaterialsCollected = record.MaterialsCollected
+                    {
+                        if let NextCollection = record.NextCollection
+                        {
+                            if let theDate = NSDate(jsonDate: NextCollection)
+                            {
+                                let formatter = NSDateFormatter()
+                                formatter.dateStyle = NSDateFormatterStyle.FullStyle
+                                let nextCollectionDate = formatter.stringFromDate(theDate)
+                                
+                               
+                                    
+                                        
+                                        dataArray.append(["MainLabel": MaterialsCollected, "NextCollection" : "Next Collection: "+nextCollectionDate])
                     
+                            
+                            }
+                            
+                        }
+                       
+                    }
                 }
         }
-            
+        self.tableView.reloadData()
+
     }
 
 
@@ -148,7 +167,7 @@ class ViewController2: UIViewController {
         self.presentViewController(alert, animated: true, completion: nil)
     }
 
-
+   
    
 }
 
@@ -178,6 +197,9 @@ extension NSDate {
                 return nil
             }
             // Create NSDate with this UNIX timestamp
+            
+            
+            
             self.init(timeIntervalSince1970: milliSeconds/1000.0)
         } else {
             return nil
